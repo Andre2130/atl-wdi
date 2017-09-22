@@ -4,12 +4,21 @@ var logger      = require('morgan');
 var express     = require('express');
 var hbs         = require('hbs');
 const bodyParser  =require('body-parser');
-/* app settings*/
+// include the method-override package
+var methodOverride = require('method-override');
+
 var app         = express();
 var port        = process.env.PORT || 3000;
 const todosController = require("./controllers/todos");
 /* set up the application params*/
+
+
 // log
+//...
+// after the app has been defined
+// use methodOverride.  We will be adding a query parameter to our delete form named _method
+app.use(methodOverride('_method'));
+/* app settings*/
 app.use( logger('dev'));
 
 app.use(bodyParser.urlencoded({extended: true}))
