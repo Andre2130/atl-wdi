@@ -8,11 +8,21 @@ class Tamagotchies {
       this.restedness = 100
       this.health = 100
     }
-    cry() {
-      this.foodInTummy--;
-      console.log("wahhh!");
-      console.log(this.name + ' has current food in tummy = ' + this.foodInTummy)
-    }
+    cry(){
+        this.foodInTummy--;
+        console.log("The Tamagotchi is crying!!! WAAAH!!!!!!");
+        console.log('current food in tummy: ' + this.foodInTummy);
+      }
+    puke() {
+        this.health--;
+        console.log("blahhh!");
+        console.log(this.name + ' has current health = ' + this.health)
+      }
+      yawn() {
+        this.restedness--;
+        console.log("blahhh!");
+        console.log(this.name + ' has current restedness = ' + this.restedness)
+      }
   }
 
 
