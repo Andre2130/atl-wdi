@@ -23,7 +23,7 @@ console.log(kitchen.order("FAT ELVIS").then(console.log).catch(console.log))
 //  Since Promise Burger only serves burgers, this will throw an error.  
 //  Make sure that your Promise can be dealt with when it is rejected.
 
-console.log(kitchen.order("Nuggets").then(console.log).catch(console.log))
+console.log(kitchen.order("quesadilla").then(console.log).catch(console.log))
 
 
 // Add A Burger To The Menu
