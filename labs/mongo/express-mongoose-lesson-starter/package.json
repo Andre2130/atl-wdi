@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "body-parser": "^1.18.2",
     "express": "^4.15.5",
     "hbs": "^4.0.1",
+    "method-override": "^2.3.9",
     "mongoose": "^4.11.13"
   },
   "devDependencies": {},

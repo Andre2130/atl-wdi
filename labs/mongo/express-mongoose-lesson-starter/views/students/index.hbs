@@ -1,6 +1,13 @@
+<div>
 {{#each students}}
     <div>
+        <span>Student ID: {{this._id}}</span>
         <span>{{this.name}}</span>
         <span>{{this.age}}</span>
+
+        <a rel="stylesheet" href="/students/{{this._id}}">View Student</a>
 {{/each}}
     </div>
+    <a href="/students/new">Add New Student</a>
+
+</div>
