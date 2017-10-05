@@ -40,11 +40,11 @@ app.use('/', donutsController);
 // LISTENERS
 //======================
 //CONNECT MONGOOSE TO "donut_store"
-var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/express-mongoose-lesson-starter');
+mongoose.Promise = global.Promise;
+mongoose.connect('mongodb://localhost/donut_store');
 
 // Now that we're connected, let's save that connection to the database in a variable.
-var db = mongoose.connection;
+const db = mongoose.connection;
 
 // Will log an error if db can't connect to MongoDB
 db.on('error', function(err){
