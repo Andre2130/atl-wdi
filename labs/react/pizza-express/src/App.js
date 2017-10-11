@@ -13,6 +13,7 @@ class App extends Component {
         <SplashImage />
         <Description />
         <MenuList />
+        <Contact />
       </div>
     );
   }
