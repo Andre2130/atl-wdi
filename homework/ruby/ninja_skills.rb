@@ -14,3 +14,7 @@ puts e
 
 d == e
 puts d
+
+christine = "Hi I'm Christine"
+likes_to = "long walks on the beach, kinda."
+puts "#{christine} and I like #{likes_to}"
