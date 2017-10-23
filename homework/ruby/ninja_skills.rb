@@ -12,5 +12,5 @@ puts d
 e = 2.3
 puts e
 
-d = e
+d == e
 puts d
