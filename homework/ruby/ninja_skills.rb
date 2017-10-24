@@ -23,3 +23,8 @@ g = "2"
 gToNumber = 2
 g + gToNumber.to_s
 
+print "Enter your name: "
+name = gets
+print "What do you like to do? "
+likes = gets
+puts "#{name} likes to #{likes}"
